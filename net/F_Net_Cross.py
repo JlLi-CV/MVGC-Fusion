@@ -386,10 +386,6 @@ class Fusion_Net(nn.Module):
         self.msi_to_64 = nn.Conv2d(fea_channels * 3 , fea_channels , kernel_size=1 , padding=0 , bias=True)
         ############
 
-
-        
-
-
         self.fusion_inn_block = Fusion_INN_Block(fea_channels , hsi_channels)
 
 
